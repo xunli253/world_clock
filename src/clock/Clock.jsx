@@ -21,7 +21,7 @@ const Clock = (props) => {
         let hour = day.getUTCHours() * deg * 5
         let minute = day.getUTCMinutes() * deg
         let second = day.getUTCSeconds() * deg
-        let timeValue = day.getUTCHours() + ":" + day.getUTCMinutes() + ":" + day.getUTCSeconds()
+        let timeValue = day.getUTCHours().toString().padStart(2, '0') + ":" + day.getUTCMinutes().toString().padStart(2, '0') + ":" + day.getUTCSeconds().toString().padStart(2, '0')
         setHourDeg(hour + minute / 12)
         setMinuteDeg(minute + second / 12)
         setSecondDeg(second)
