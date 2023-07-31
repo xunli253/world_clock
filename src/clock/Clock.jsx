@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import ClockBackground from './ClockBackground';
-import ClockPointer from '../pointer/clockPointer';
+import ClockPointer from '../pointer/ClockPointer';
 import Title from './Title';
 import Time from './Time';
 import { useEffect, useState } from 'react';
